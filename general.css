@@ -1,0 +1,43 @@
+/*COLORS*/
+:root {
+    --primary: rgb(150, 149, 139);   /* Blue */
+    --primary-light: rgb(230, 230, 225);
+    --text-dark: #333333; /* Dark gray */
+    --bg-light: #F9F9F9;  /* Light background */
+    --secondary: rgb(195, 111, 111);
+}
+
+
+
+
+/* Universal Button Styles */
+button, .btn {
+    display: inline-block;
+    padding: 10px 20px; /* Spacing around text */
+    font-size: 1rem; /* Adjust size as needed */
+    font-weight: 500; /* Semi-bold for readability */
+    border: none; /* Removes default borders */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effects */
+}
+
+/* Default Button Look */
+button, .btn {
+    background-color: var(--primary-light); /* Primary button color */
+    color: rgb(0, 0, 0);
+}
+
+/* Hover State */
+button:hover, .btn:hover {
+    background-color: var(--secondary); /* Slightly darker shade for hover */
+}
+
+/* Disabled Button */
+button:disabled, .btn:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}

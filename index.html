@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="general.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
 
@@ -41,7 +42,8 @@
         </div>
       </div>
     </nav>
-    <section id="profile">
+    <!--SECTION PROFILE-->
+    <section id="about">
       <div class="section-profile">
         <p class="section-profile-welcome">Welcome to my portfolio website!</p>
         <p class="section-profile-name">I am Agnieszka Trawinska,</p>
@@ -49,8 +51,46 @@
         <div class="section-profile-btn">
           <button class="section-profile-btn-eng" onclick="window.open('./assets/CVeng.pdf')">English CV</button>
           <button class="section-profile-btn-pl" onclick="window.open('./assets/CVpl.pdf')">Polish CV</button>
+          
+        </div>
+        <div id="socials-container">
+          <img src="./assets/linkedin.png" alt="My linkedin profile" 
+          class="icon" onclick="location.href='https://www.linkedin.com/in/agnieszka-trawi%C5%84ska-b701aa307/'" />
+          <img src="./assets/github.png" alt="My linkedin profile" 
+          class="icon" onclick="location.href='https://github.com/atrawinska'" />
         </div>
 
+
+      </div>
+
+    </section>
+    <!--SECTION PROFILE-->
+    <section id="About me">
+
+      <p class="title">About me</p>
+
+    </section>
+
+
+        <!--SECTION PROJECTS-->
+    <section id="Projects">
+
+      <p class="title">Projects</p>
+      <div class="experience-details-container">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/flutter_mobile_app_BT.png" alt="Project 1"
+            class="project_1"/>
+
+          </div>
+          <h2 class="experience-sub-title project-title">PRoject one</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/atrawinska/BLE_final_app_esp32_autonomous_vehicle'">
+            GitHub
+            </button>
+
+          </div>
+        </div>
 
       </div>
 
