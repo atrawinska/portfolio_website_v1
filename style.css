@@ -328,3 +328,60 @@ a:hover {
     flex-direction: column;             /* Stack items vertically */
     padding: 20px;                      /* Optional: Add padding around the section */
 }
+
+/* CONTAINER */
+.experience-details-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Space between project cards */
+}
+
+.details-container {
+    width: calc(33.33% - 20px); /* 3 per row, adjusted for spacing */
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* PROJECT IMAGE */
+.project-image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+    .details-container {
+        width: calc(50% - 20px); /* 2 per row on tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .details-container {
+        width: 100%; /* 1 per row on mobile */
+    }
+}
+
+/* PROJECT CONTAINER */
+.single-project-container {
+    max-width: 25%;
+    margin: 3rem;
+    border-radius: 15px; /* Fixed px */
+    border: 2px solid var(--primary-light); /* Fixed border */
+    padding: 2rem;
+}
+
+.projects-container {
+    
+}
+
+#Projects {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+

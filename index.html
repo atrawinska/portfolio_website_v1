@@ -13,9 +13,9 @@
   <body>
     <!-- Desktop Navigation -->
     <nav id="desktop-nav">
-        <div class="name">Agnieszka Trawinska</div>
+      <div class="name">Agnieszka Trawinska</div>
       <ul class="nav-links">
-                <li><a href="#about">About</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -24,7 +24,7 @@
 
     <!-- Hamburger Navigation -->
     <nav id="hamburger-nav">
-        <div class="name">Agnieszka Trawinska</div>
+      <div class="name">Agnieszka Trawinska</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -33,7 +33,6 @@
         </div>
         <div class="menu-links">
           <ul>
-   
             <li><a href="#about" onclick="toggleMenu()">About</a></li>
             <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
             <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
@@ -42,58 +41,55 @@
         </div>
       </div>
     </nav>
-    <!--SECTION PROFILE-->
+
+    <!-- SECTION PROFILE -->
     <section id="about">
       <div class="section-profile">
         <p class="section-profile-welcome">Welcome to my portfolio website!</p>
         <p class="section-profile-name">I am Agnieszka Trawinska,</p>
         <p class="section-profile-description">an engineering student.</p>
         <div class="section-profile-btn">
-          <button class="section-profile-btn-eng" onclick="window.open('./assets/CVeng.pdf')">English CV</button>
-          <button class="section-profile-btn-pl" onclick="window.open('./assets/CVpl.pdf')">Polish CV</button>
-          
+          <button
+            class="section-profile-btn-eng"
+            onclick="window.open('./assets/CVeng.pdf')"
+          >
+            English CV
+          </button>
+          <button
+            class="section-profile-btn-pl"
+            onclick="window.open('./assets/CVpl.pdf')"
+          >
+            Polish CV
+          </button>
         </div>
         <div id="socials-container">
-          <img src="./assets/linkedin.png" alt="My linkedin profile" 
-          class="icon" onclick="location.href='https://www.linkedin.com/in/agnieszka-trawi%C5%84ska-b701aa307/'" />
-          <img src="./assets/github.png" alt="My linkedin profile" 
-          class="icon" onclick="location.href='https://github.com/atrawinska'" />
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/agnieszka-trawi%C5%84ska-b701aa307/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My GitHub profile"
+            class="icon"
+            onclick="location.href='https://github.com/atrawinska'"
+          />
         </div>
-
-
       </div>
-
     </section>
-    <!--SECTION PROFILE-->
+
+    <!-- SECTION ABOUT ME -->
     <section id="About me">
-
       <p class="title">About me</p>
-
     </section>
 
-
-        <!--SECTION PROJECTS-->
+    <!-- SECTION PROJECTS -->
     <section id="Projects">
-
       <p class="title">Projects</p>
-      <div class="experience-details-container">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/projects/flutter_mobile_app_BT.png" alt="Project 1"
-            class="project_1"/>
-
-          </div>
-          <h2 class="experience-sub-title project-title">PRoject one</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/atrawinska/BLE_final_app_esp32_autonomous_vehicle'">
-            GitHub
-            </button>
-
-          </div>
-        </div>
-
+      <div class="experience-details-container" id="projects-container">
+        <!-- Projects will be inserted here by JavaScript -->
       </div>
-
     </section>
 
     <script src="script.js"></script>
