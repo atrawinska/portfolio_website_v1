@@ -4,21 +4,21 @@
       "description": "A mobile application for a semester project at my university. The app provides control over a car we made and equips the user with real-time monitoring of the data the vehicle gets from its sensors. The communication with ESP32 uses BLE (Bluetooth low energy)",
       "technologies used": "Flutter/Dart, Figma, Git/GitHub",
       "image": "./assets/projects/flutter_mobile_app_BT.png",
-      "githubUrl": "https://github.com/atrawinska/BLE_final_app_esp32_autonomous_vehicle"
+      "link": "https://github.com/atrawinska/BLE_final_app_esp32_autonomous_vehicle"
     },
     {
       "title": "Weather app",
       "description": "A weather app which calls OpenWeather API. Currently under reconstruction with plans to use riverpod and list of places.",
       "technologies used": "Flutter/Dart, Figma, Git/GitHub",
-      "image": "./assets/project_two_image.png",
-      "githubUrl": "https://github.com/atrawinska/project_two"
+      "image": "./assets/projects/weather_app_figma.png",
+      "link": "https://github.com/atrawinska/project_two"
     },
     {
       "title": "Online Social campagne AkceptAkcja",
       "description": "A social project conudcted in the virtual space of social media (Instagram, Facebook, TikTok). It was focused on spreading awareness about problems with self-acceptance. It was conducted in Polish for a target audience of Polish young adults/teenagers, made within Zwolnieni z Teorii and with fund from The City of Warsaw granted by KIK (Klub Inteligencji Katolickiej).",
       "technologies used": "Canva, Instagram, Facebook, TikTok, Google tools",
       "image": "./assets/projects/akcept_akcja.png",
-      "githubUrl": "https://www.instagram.com/akcept_akcja/"
+      "link": "https://www.instagram.com/akcept_akcja/"
     }
   ]
   

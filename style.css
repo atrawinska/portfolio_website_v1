@@ -9,13 +9,16 @@ html {
 *{  /*targets the whole page*/
 margin: 0;
 padding: 0;
+box-sizing: border-box;
+
 
 }
 
 body {
     font-family: "Roboto", serif;
     font-weight: 100;
-   
+   margin: 1rem;
+   padding: 1rem;
 
 }
 
@@ -37,351 +40,75 @@ a, .btn {
 
 }
 
-/*DESKTOP NAV*/
-nav, .nav-links {
-    display: flex;
-    
 
-}
 
-nav {
-    justify-content: space-around;
-    align-items: center;
-    height: 17vh; /*view height*/
-
-}
-
-.nav-links{
-    gap: 2rem;
-    list-style: none;
-    font-size: 1.7rem;
-    
-
-}
-
-.name{
-    font-weight:400;
-    color: rgb(195, 111, 111);
-}
-
-a:hover {
-
-    color: grey;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-    text-decoration-color: rgb(181, 181,181);
-
-
-}
-
-#hamburger-nav {
-    display: none;
-    justify-content: space-around;
-}
-
-.hamburger-menu{
-    position: relative;
-    
-}
-
-.hamburger-icon{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 24px;
-    width: 30px;
-    cursor: pointer;
-
-}
-
-
-.hamburger-icon span{
-    width: 100%;
-    height: 2px;
-    transition: all 0.3 ease-in-out;
-    background-color: black;
-}
-
-
-.menu-links li{
-    margin-bottom: 20px;
-    list-style: none;
-
-}
-.menu-links{
-
-    padding-top: 30px;
-    z-index: 10;
-    background-color: white;
-    width: fit-content;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.3 ease-in-out;
-    position: absolute;
-    
-}
-
-.name {
-    justify-content: space-around;
-    font-size: 1.7rem;   
-}
-
-.menu-links a{
-
-    display: block;
-    padding: 10px;
-    margin: auto;
-    font-size: 1.7rem;
-    color: black;
-    text-decoration: none;
-    transition: all 0.3 ease-in-out;
-}
-
-.menu-links.open{
-    max-height: 300px;
-
-}
-
-.hamburger-icon.open span:first-child {
-    transform: rotate(45deg) translate(10px,5px);
-
-}
-
-.hamburger-icon.open span:nth-child(2) {
-    opacity: 0;
-
-}
-
-.hamburger-icon.open span:last-child {
-    transform: rotate(-45deg) translate(10px,-5px);
-
-}
-
-.hamburger-icon span:first-child {
-    transform: none;
-
-}
-
-.hamburger-icon span:first-child(2) {
-    opacity: 1;
-
-}
-
-.hamburger-icon span:first-child {
-    transform: none;
-
-}
-
-/* profile section styling */
-
-#profile {
-    justify-content: center;
-    padding-top: 4vh;
-    display: flex;
-    transition: all 0.3 ease-in-out;
-    align-items: center;
-    box-sizing: border-box;
-
-}
-
-.section-profile{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-}
-
-.section-profile-welcome{
-    font-size: 1.5rem;
-    font-weight: 300;
-    color: rgb(59, 25, 25);
-    margin-bottom: 10px;
-    
-    
-}
-
-.section-profile-name{
-    font-size: 1.8rem;
-    font-weight: 400;
-    color: rgb(180, 73, 73);
-    margin-bottom: 10px;
-    
-}
-
-.section-profile-description{
-    font-size: 1.7rem;
-    font-weight: 300;
-    color: rgb(0, 0, 0);
-    margin-bottom: 10px;
-  
-    
-}
-
-.section-profile-btn{
-    size: 1.7rem;
-    font-weight: 300;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 15px;
-    display:flex;
-    
-
-    
-}
-.section-profile-btn-eng{
-    size: 1.7rem;
-    font-weight: 300;
-    background-color: rgb(255, 255, 255);
-    border: none;
-    padding: 10px;
-    cursor: pointer; /* Indicates the element is clickable */
-    transition: background-color 0.5s ease;
-    box-shadow: none;
-    text-shadow: none;
-    border-radius: 5px;
-
-}
-
-.section-profile-btn-eng:hover{
-
-
-    background-color: rgb(245, 188, 188);
-    transition: background-color 0.5s ease;
-
-
-
-}
-
-.section-profile-btn-pl{
-    size: 1.7rem;
-    font-weight: 300;
-    background-color: rgb(255, 255, 255);
-    border: none;
-    padding: 10px;
-    cursor: pointer; /* Indicates the element is clickable */
-    transition: background-color 0.5s ease;
-    box-shadow: none;
-    text-shadow: none;
-    border-radius: 5px;
-
-}
-
-.section-profile-btn-pl:hover{
-
-
-    background-color: rgb(245, 188, 188);
-    transition: background-color 0.5s ease;
-
-
-
-}
-
-.section-container {
-    display: flex;
-
-}
-
-/* Profile section */
-
-#profile {
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    height: 80vh;
-}
-
-.icon {
-    cursor: pointer;
-    height: 2rem;
-    justify-content: center;
-    
-}
-
-/* Project section */
-
-
-
-
-/* Project image styling */
-.project_1 {
-    width: 25rem; /* Adjust the width of the image */
-    margin: 0 ; /* Center the image horizontally */
-}
-
-/* Details container styling (add border and padding) */
-.details-container {
-    border-radius: 10px;                /* Rounded corners for the container */
-    border: 2px solid var(--primary);   /* Border color from the --primary variable */
-    padding: 20px;                      /* Add padding inside the container */
-    max-width: 30rem;                   /* Set a max width for the content */
-    margin: 0 auto;                     /* Center the content horizontally */
-    text-align: center;                 /* Center text inside the container */
-}
-
-/* Projects section */
-#Projects {
-    display: flex;                      /* Use flexbox for layout */
-    justify-content: center;            /* Center the content horizontally */
-    align-items: center;                /* Center the content vertically */
-    height: 100vh;                      /* Make the section take up the full height of the viewport */
-    flex-direction: column;             /* Stack items vertically */
-    padding: 20px;                      /* Optional: Add padding around the section */
-}
-
-/* CONTAINER */
-.experience-details-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px; /* Space between project cards */
-}
-
-.details-container {
-    width: calc(33.33% - 20px); /* 3 per row, adjusted for spacing */
-    border: 1px solid #ccc;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
 
 /* PROJECT IMAGE */
+
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 2rem;
+    padding: 20px;
+}
+
+
+
+#projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 2rem; /* Space between grid items */
+    width: 100%;
+    align-items: stretch; /* Makes all items stretch to the tallest height */
+    
+}
+
+.single-project-container {
+    /* No need to set width here – grid takes care of it */
+
+    
+    margin: 1rem; /* Consistent margin */
+    margin: 0; /* Remove any margin */
+    border-radius: 15px;
+    border: 2px solid var(--primary-light);
+    padding: 2rem;
+    overflow: hidden;
+    
+}
+
+
+.project-section-title{
+    color: var(--text-dark);
+    font-weight: 500;
+    font-size: 45px;
+}
+
+
+.project-title {
+    margin-top: 10px;
+}
+
+.project-link-button{
+    width: 100%;
+    background-color: white;
+}
+
+.project-description {
+    margin-top: 10px;
+    color: var(--text-dark);
+    font-weight: 300;
+    
+}
+
 .project-image {
     width: 100%;
     border-radius: 5px;
+    display: block;
+    margin: 0.2rem;
 }
 
-/* RESPONSIVE DESIGN */
-@media (max-width: 900px) {
-    .details-container {
-        width: calc(50% - 20px); /* 2 per row on tablets */
-    }
-}
-
-@media (max-width: 600px) {
-    .details-container {
-        width: 100%; /* 1 per row on mobile */
-    }
-}
-
-/* PROJECT CONTAINER */
-.single-project-container {
-    max-width: 25%;
-    margin: 3rem;
-    border-radius: 15px; /* Fixed px */
-    border: 2px solid var(--primary-light); /* Fixed border */
-    padding: 2rem;
-}
-
-.projects-container {
-    
-}
-
-#Projects {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    position: relative;
-}
 

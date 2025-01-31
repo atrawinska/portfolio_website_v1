@@ -3,8 +3,10 @@
     --primary: rgb(150, 149, 139);   /* Blue */
     --primary-light: rgb(230, 230, 225);
     --text-dark: #333333; /* Dark gray */
+    --text-light: #6c6c6c; /* Dark gray */
     --bg-light: #F9F9F9;  /* Light background */
     --secondary: rgb(195, 111, 111);
+    --secondary-light: rgb(253, 220, 220);
 }
 
 
@@ -28,11 +30,13 @@ button, .btn {
 button, .btn {
     background-color: var(--primary-light); /* Primary button color */
     color: rgb(0, 0, 0);
+    border-radius: 15;
+    margin-top: 10px;
 }
 
 /* Hover State */
 button:hover, .btn:hover {
-    background-color: var(--secondary); /* Slightly darker shade for hover */
+    background-color: var(--secondary-light); /* Slightly darker shade for hover */
 }
 
 /* Disabled Button */
@@ -40,4 +44,13 @@ button:disabled, .btn:disabled {
     background-color: #ccc;
     color: #666;
     cursor: not-allowed;
+}
+
+
+section {
+    margin: 2rem;   /* Add space above each section */
+    padding: 2rem; /* Add padding for internal spacing */
+    width: 100%;
+    gap: 2rem; /* Space between elements inside sections */
+    position: relative;
 }

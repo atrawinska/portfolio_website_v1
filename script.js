@@ -27,10 +27,12 @@ document.addEventListener("DOMContentLoaded", function () {
             projectDiv.innerHTML = `
             <div class="single-project-container">
                 <img src="${project.image}" alt="${project.title}" class="project-image" style="width:100%">
-                <h3>${project.title}</h3>
-                <p>${project.description}</p>
-                <a href="${project.link}" target="_blank">View Project</a>
-                </div>
+                <h3 class="project_title">${project.title}</h3>
+                <p class="project-description">${project.description}</p>
+                <a href="${project.link}" target="_blank"><button class="project-link-button">View Project</button></a>
+            </div>
+            
+                
             `;
 
             // Append the project to the container
